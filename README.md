@@ -1,14 +1,14 @@
 # Sashank Kuraganti
 
-Independent projects in software, data engineering and AI, built around practical workflows and inspectable evidence.
+My projects cover software, data engineering and AI, from sorting transactions to investigating an application failure. Pick a demo below to try one in your browser.
 
-The links below open interactive browser demonstrations. Each repository also contains the full Python/Docker application, architecture notes, reproducible data preparation and verification records. Hosted demos use labeled synthetic fixtures, captured data or recorded results. Backend workers run locally; optional model calls use a configured host bridge and may use remote inference.
+Each repository has the full Python/Docker application, setup steps and test results, along with architecture notes and repeatable data preparation. The browser demos label saved observations, synthetic examples and recorded results. Backend workers run locally. Optional model features use a configured host bridge and may run inference remotely.
 
 ## Start here
 
-- **[Relay](https://github.com/skuraganti/data-pipeline-monitor):** follow a quarantined source row, inspect checkpoint recovery and see why only a complete normal run publishes a report.
-- **[Folio](https://github.com/skuraganti/private-ai-knowledge-engine):** compare retrieval approaches and inspect exact supporting pages. The small held-out study includes a lexical baseline, abstentions and failures.
-- **[Contour](https://github.com/skuraganti/ai-codebase-explorer):** explore source-linked symbols and import paths, then trace potential consumers of a changed module. Static reachability is qualified as potential impact.
+- **[Relay](https://github.com/skuraganti/data-pipeline-monitor):** follow a source row held back by a quality check, then see how a failed run resumes from a checkpoint. Only a complete normal run publishes a report.
+- **[Folio](https://github.com/skuraganti/private-ai-knowledge-engine):** compare search methods and open the exact pages behind a result. The reports use separate test questions and word-based search for comparison. Unanswered questions and unsuccessful results stay visible.
+- **[Contour](https://github.com/skuraganti/ai-codebase-explorer):** open source-linked symbols and follow import paths to modules that may depend on a change. These static import paths show potential impact.
 
 ## All projects
 
@@ -24,12 +24,12 @@ The links below open interactive browser demonstrations. Each repository also co
 
 ## Screenshots
 
-These previews are captured from the public browser demos. Expand a project to inspect its interface and data mode.
+These screenshots come from the public browser demos. Expand a project to see its interface and how its data is labeled.
 
 <details>
 <summary>Ledger — preview</summary>
 
-Synthetic GBP fixture; CSV processing stays in the browser.
+A synthetic GBP example. CSV processing stays in the browser.
 
 <img src="assets/personal-spending-tracker.png" alt="Ledger: synthetic GBP spending, budget controls and recurring-charge candidates." width="1100" />
 
@@ -40,7 +40,7 @@ Synthetic GBP fixture; CSV processing stays in the browser.
 <details>
 <summary>Fieldglass — preview</summary>
 
-Captured USGS/NWS observations; the hosted demo does not poll live feeds.
+Saved USGS/NWS observations. The hosted demo does not poll live feeds.
 
 <img src="assets/live-earth-dashboard.png" alt="Fieldglass: captured earthquake observations, magnitude filtering and event-time map playback." width="1100" />
 
@@ -51,7 +51,7 @@ Captured USGS/NWS observations; the hosted demo does not poll live feeds.
 <details>
 <summary>Relay — preview</summary>
 
-Actual NYC TLC aggregates with explicitly simulated browser queue/retry behavior.
+Actual NYC TLC aggregates, with queue and retry behavior explicitly simulated in the browser.
 
 <img src="assets/data-pipeline-monitor.png" alt="Relay: real taxi-data quality aggregates and simulated queue and retry controls." width="1100" />
 
@@ -62,7 +62,7 @@ Actual NYC TLC aggregates with explicitly simulated browser queue/retry behavior
 <details>
 <summary>Folio — preview</summary>
 
-Lexical search and extractive citations over captured NIST document passages.
+Search captured NIST document passages by word and inspect the quoted citations.
 
 <img src="assets/private-ai-knowledge-engine.png" alt="Folio: lexical search and extractive citations from captured NIST document passages." width="1100" />
 
@@ -73,7 +73,7 @@ Lexical search and extractive citations over captured NIST document passages.
 <details>
 <summary>Contour — preview</summary>
 
-Saved parser output from pinned Flask/Zod source; no analyzed code is executed.
+Saved parser output from pinned Flask/Zod source. No analyzed code is executed.
 
 <img src="assets/ai-codebase-explorer.png" alt="Contour: saved architecture map and static imports from pinned Flask and Zod source." width="1100" />
 
@@ -95,7 +95,7 @@ Recorded BFCL-derived planning results; tool receipts and faults are simulated.
 <details>
 <summary>Faultline — preview</summary>
 
-Measured sandbox telemetry with injected causes and saved diagnoses; no repair executor.
+Measured sandbox telemetry, injected causes and saved diagnoses. There is no repair executor.
 
 <img src="assets/ai-incident-investigator.png" alt="Faultline: measured HTTP failures, correlated request traces and a qualified study readout." width="1100" />
 
@@ -103,7 +103,7 @@ Measured sandbox telemetry with injected causes and saved diagnoses; no repair e
 
 </details>
 
-## What to inspect
+## What’s in each repository
 
 - **Data provenance:** publisher links, acquisition scripts, sampling, licenses and limitations in each `DATA_SOURCES.md`.
 - **Engineering decisions:** architecture, alternatives and tradeoffs in `ARCHITECTURE.md` and `DECISIONS.md`.
@@ -112,8 +112,8 @@ Measured sandbox telemetry with injected causes and saved diagnoses; no repair e
 
 ## Running the full applications
 
-Each project has its own dependencies, configuration, Docker Compose setup and data storage. Start with its README, run one stack at a time on a small machine, and use the documented local URL. GitHub Pages does not run the Python services or model bridges.
+Each project keeps its own dependencies, configuration, Docker Compose setup and data storage. Start with its README and documented local URL. On a small machine, run one stack at a time. GitHub Pages does not run the Python services or model bridges.
 
-## Technologies and engineering
+## Technologies and testing
 
-Python, SQL and browser JavaScript support the applications, with Docker Compose for isolated local services. Each project documents its architecture, dependency locks, data preparation, domain tests and browser checks. Recovery tests, source-linked analysis and bounded evaluation studies make the results inspectable.
+The applications use Python, SQL and browser JavaScript, with Docker Compose keeping local services separate. Each repository includes locked dependencies, data preparation and tests for its main workflow. Recovery checks show what survives a restart. Search and investigation results link back to their sources, and evaluation reports keep unsuccessful runs visible.
