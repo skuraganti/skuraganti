@@ -1,20 +1,26 @@
-# skuraganti
+# Sashank Kuraganti
 
 Independent projects in software, data engineering and AI, built around practical workflows and inspectable evidence.
 
 The links below open interactive browser demonstrations. Each repository also contains the full Python/Docker application, architecture notes, reproducible data preparation and verification records. Hosted demos use labeled synthetic fixtures, captured data or recorded results. Backend workers run locally; optional model calls use a configured host bridge and may use remote inference.
 
-## Selected projects
+## Start here
 
-| Project | Explore | Engineering focus |
-|---|---|---|
-| **Ledger** | [Demo](https://skuraganti.github.io/personal-spending-tracker/) · [Code](https://github.com/skuraganti/personal-spending-tracker) | Transaction imports, category rules, recurring-payment candidates and budgets. |
-| **Fieldglass** | [Demo](https://skuraganti.github.io/live-earth-dashboard/) · [Code](https://github.com/skuraganti/live-earth-dashboard) | Earthquake and weather ingestion, map playback and location watches. |
-| **Relay** | [Demo](https://skuraganti.github.io/data-pipeline-monitor/) · [Code](https://github.com/skuraganti/data-pipeline-monitor) | Scheduled ingestion, quality checks, lineage and recoverable processing. |
-| **Folio** | [Demo](https://skuraganti.github.io/private-ai-knowledge-engine/) · [Code](https://github.com/skuraganti/private-ai-knowledge-engine) | Document ingestion, hybrid retrieval, cited answers and deletion propagation. |
-| **Contour** | [Demo](https://skuraganti.github.io/ai-codebase-explorer/) · [Code](https://github.com/skuraganti/ai-codebase-explorer) | Python/TypeScript indexing, dependency graphs and change-impact analysis. |
-| **TraceLab** | [Demo](https://skuraganti.github.io/ai-agent-evaluation-lab/) · [Code](https://github.com/skuraganti/ai-agent-evaluation-lab) | Tool-planning benchmarks, immutable traces, replay and injection tests. |
-| **Faultline** | [Demo](https://skuraganti.github.io/ai-incident-investigator/) · [Code](https://github.com/skuraganti/ai-incident-investigator) | Correlated logs, metrics and traces with evidence-linked diagnoses. |
+- **[Relay](https://github.com/skuraganti/data-pipeline-monitor):** follow a quarantined source row, inspect checkpoint recovery and see why only a complete normal run publishes a report.
+- **[Folio](https://github.com/skuraganti/private-ai-knowledge-engine):** compare retrieval approaches and inspect exact supporting pages. The small held-out study includes a lexical baseline, abstentions and failures.
+- **[Contour](https://github.com/skuraganti/ai-codebase-explorer):** explore source-linked symbols and import paths, then trace potential consumers of a changed module. Static reachability is qualified as potential impact.
+
+## All projects
+
+| Project | Explore | Engineering focus | Roadmap |
+|---|---|---|---|
+| **Ledger** | [Demo](https://skuraganti.github.io/personal-spending-tracker/) · [Code](https://github.com/skuraganti/personal-spending-tracker) | Transaction imports, category rules, recurring-payment candidates and budgets. | [Board](https://github.com/users/skuraganti/projects/1) |
+| **Fieldglass** | [Demo](https://skuraganti.github.io/live-earth-dashboard/) · [Code](https://github.com/skuraganti/live-earth-dashboard) | Earthquake and weather ingestion, map playback and location watches. | [Board](https://github.com/users/skuraganti/projects/2) |
+| **Relay** | [Demo](https://skuraganti.github.io/data-pipeline-monitor/) · [Code](https://github.com/skuraganti/data-pipeline-monitor) | Scheduled ingestion, quality checks, lineage and recoverable processing. | [Board](https://github.com/users/skuraganti/projects/3) |
+| **Folio** | [Demo](https://skuraganti.github.io/private-ai-knowledge-engine/) · [Code](https://github.com/skuraganti/private-ai-knowledge-engine) | Document ingestion, hybrid retrieval, cited answers and deletion propagation. | [Board](https://github.com/users/skuraganti/projects/4) |
+| **Contour** | [Demo](https://skuraganti.github.io/ai-codebase-explorer/) · [Code](https://github.com/skuraganti/ai-codebase-explorer) | Python/TypeScript indexing, dependency graphs and change-impact analysis. | [Board](https://github.com/users/skuraganti/projects/5) |
+| **TraceLab** | [Demo](https://skuraganti.github.io/ai-agent-evaluation-lab/) · [Code](https://github.com/skuraganti/ai-agent-evaluation-lab) | Tool-planning benchmarks, immutable traces, replay and injection tests. | [Board](https://github.com/users/skuraganti/projects/6) |
+| **Faultline** | [Demo](https://skuraganti.github.io/ai-incident-investigator/) · [Code](https://github.com/skuraganti/ai-incident-investigator) | Correlated logs, metrics and traces with evidence-linked diagnoses. | [Board](https://github.com/users/skuraganti/projects/7) |
 
 ## Screenshots
 
