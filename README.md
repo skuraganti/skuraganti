@@ -114,6 +114,6 @@ Measured sandbox telemetry with injected causes and saved diagnoses; no repair e
 
 Each project has its own dependencies, configuration, Docker Compose setup and data storage. Start with its README, run one stack at a time on a small machine, and use the documented local URL. GitHub Pages does not run the Python services or model bridges.
 
-## Tools and attribution
+## Technologies and engineering
 
-The projects were developed with Claude Code and ChatGPT, with architecture decisions, review, corrections and verification documented in the repositories. Original publishers and reused components are credited in each `UPSTREAM.md`; their notices and license terms remain in place.
+Python, SQL and browser JavaScript support the applications, with Docker Compose for isolated local services. Each project documents its architecture, dependency locks, data preparation, domain tests and browser checks. Recovery tests, source-linked analysis and bounded evaluation studies make the results inspectable.
